@@ -1,0 +1,50 @@
+[
+  {
+    "id": "albahaca",
+    "name": "Albahaca",
+    "description": "Hierba aromática ideal para pastas y pestos. Maceta 12 cm.",
+    "price": 12000,
+    "section": "aromaticas",
+    "image": "assets/albahaca.png"
+  },
+  {
+    "id": "menta",
+    "name": "Menta",
+    "description": "Aromática refrescante para infusiones y postres. Maceta 12 cm.",
+    "price": 11000,
+    "section": "aromaticas",
+    "image": "assets/menta.png"
+  },
+  {
+    "id": "romero",
+    "name": "Romero",
+    "description": "Aromática resistente para carnes y asados. Maceta 15 cm.",
+    "price": 15000,
+    "section": "aromaticas",
+    "image": "assets/romero.png"
+  },
+  {
+    "id": "manzanilla",
+    "name": "Manzanilla",
+    "description": "Planta medicinal calmante para infusiones. Maceta 12 cm.",
+    "price": 13000,
+    "section": "medicinales",
+    "image": "assets/manzanilla.png"
+  },
+  {
+    "id": "aloe",
+    "name": "Aloe Vera",
+    "description": "Suculenta medicinal para cuidados de la piel. Maceta 15 cm.",
+    "price": 18000,
+    "section": "medicinales",
+    "image": "assets/aloe.png"
+  },
+  {
+    "id": "lavanda",
+    "name": "Lavanda",
+    "description": "Planta relajante y ornamental, gran aroma. Maceta 15 cm.",
+    "price": 16000,
+    "section": "medicinales",
+    "image": "assets/lavanda.png"
+  }
+]

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paradise Nursery — Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html">🌿 Paradise Nursery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="products.html">Productos</a></li>
+      <li><a href="cart.html" class="cart-link">🛒 Carrito <span id="cart-count" class="badge">0</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+  <main class="container section">
+    <h1>Catálogo de plantas</h1>
+    <p>Agrega tus favoritas al carrito y sigue comprando.</p>
+
+    <h2 id="aromaticas">Plantas aromáticas</h2>
+    <div id="grid-aromaticas" class="grid"></div>
+
+    <h2 id="medicinales">Plantas medicinales</h2>
+    <div id="grid-medicinales" class="grid"></div>
+
+    <h2>Todas</h2>
+    <div id="grid-all" class="grid"></div>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Paradise Nursery — Proyecto educativo</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    renderProducts('grid-aromaticas', 'aromaticas');
+    renderProducts('grid-medicinales', 'medicinales');
+    renderAllProducts('grid-all');
+  </script>
+</body>
+</html>

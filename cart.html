@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paradise Nursery — Carrito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html">🌿 Paradise Nursery</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="products.html">Productos</a></li>
+      <li><a href="cart.html" class="cart-link">🛒 Carrito <span id="cart-count" class="badge">0</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+  <main class="container section">
+    <h1>Tu carrito</h1>
+    <div id="cart-list"></div>
+    <div class="summary">
+      <a class="btn btn-outline" href="products.html">⬅ Continuar comprando</a>
+      <div>
+        <strong>Total: <span id="total">0</span></strong>
+        <button class="btn" id="checkout">Pagar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">© 2025 Paradise Nursery — Proyecto educativo</div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    renderCart('cart-list', 'total');
+    document.getElementById('checkout').addEventListener('click', () => {
+      const count = Object.values(getCart()).reduce((a,b)=>a+b,0);
+      if (!count) { toast('Tu carrito está vacío'); return; }
+      toast('¡Gracias por tu compra! (demo)');
+      clearCart();
+      setTimeout(()=> location.href='index.html', 800);
+    });
+  </script>
+</body>
+</html>
